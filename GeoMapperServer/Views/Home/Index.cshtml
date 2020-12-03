@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "GeoMapper";
+}
+
+@{ await Html.RenderPartialAsync("PartialViews/SearchingForm"); }
+
+<div id="map"></div>
+<div class="loader"></div>
+
+@{ await Html.RenderPartialAsync("PartialViews/DownloadingForm"); }
+
+@section Scripts {
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}

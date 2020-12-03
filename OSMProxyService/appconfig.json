@@ -1,0 +1,7 @@
+{
+  "AppSettings": {
+    "NominatimHost": "https://nominatim.openstreetmap.org/search",
+    "PolygonsHost": "http://polygons.openstreetmap.fr",
+    "PolygonsHostGeoJson": "http://polygons.openstreetmap.fr/get_geojson.py"
+  }
+}

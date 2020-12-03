@@ -1,0 +1,16 @@
+﻿@model GeoMapper.ViewModels.DownloadingFormViewModel
+<form id="downloading_form" class="form-inline" asp-action="UploadFile" asp-controller="Home" asp-antiforgery="true" novalidate>
+    <div class="form-group">
+        <label class="form-lb" asp-for="FileName">File Name:</label>
+        <div class="valid-input">
+            <input class="form-control" asp-for="FileName" name="FileName" type="text" required/>
+            <span class="invalid-feedback" asp-validation-for="FileName"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <input class="form-control" asp-for="MapBase64Img" name="MapBase64Img" type="hidden" />
+    </div>
+    <div class="form-group">
+        <button id="download_btn" type="submit" class="btn btn-primary">Download</button>
+    </div>
+</form>
